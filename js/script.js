@@ -7,25 +7,40 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.toggle('active');
         navLinks.classList.toggle('active');
         
-        // Toggle dropdown menus if they're open
+        // Close all dropdown menus when mobile nav is toggled
         document.querySelectorAll('.dropdown-menu').forEach(menu => {
-            if (menu.classList.contains('active')) {
-                menu.classList.remove('active');
-            }
+            menu.classList.remove('active');
         });
     });
     
-    // Dropdown menu toggle for mobile
+    // Unified dropdown menu toggle for all screen sizes
     document.querySelectorAll('.dropdown > a').forEach(dropdown => {
         dropdown.addEventListener('click', function(e) {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                const menu = this.nextElementSibling;
-                menu.classList.toggle('active');
-            }
+            e.preventDefault();
+            const menu = this.nextElementSibling;
+            
+            // Close all other dropdowns first
+            document.querySelectorAll('.dropdown-menu').forEach(otherMenu => {
+                if (otherMenu !== menu && otherMenu.classList.contains('active')) {
+                    otherMenu.classList.remove('active');
+                }
+            });
+            
+            // Toggle current dropdown
+            menu.classList.toggle('active');
         });
     });
     
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                menu.classList.remove('active');
+            });
+        }
+    });
+
+    // Rest of your existing code remains the same...
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
@@ -52,8 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize animation on load
     animateOnScroll();
-    
-    // Animate on scroll
     window.addEventListener('scroll', animateOnScroll);
     
     // Initialize Swiper sliders
@@ -79,26 +92,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     const cloudProjectsSwiper = new Swiper('.cloud-projects-slider', {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
         },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 2,
-            },
-            1024: {
-                slidesPerView: 3,
-            }
+        1024: {
+            slidesPerView: 3,
         }
-    });
-    
+    },
+    // Enable looping to see all projects
+    loop: true,
+    // Add these for better performance with many slides
+    watchSlidesProgress: true,
+    preventClicks: false,
+    preventClicksPropagation: false
+});
     const cyberProjectsSwiper = new Swiper('.cyber-projects-slider', {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -135,6 +153,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     navToggle.classList.remove('active');
                     navLinks.classList.remove('active');
                 }
+                
+                // Close all dropdown menus
+                document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                    menu.classList.remove('active');
+                });
                 
                 window.scrollTo({
                     top: targetElement.offsetTop - 70,
@@ -183,14 +206,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Set current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
-    
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown') && window.innerWidth > 768) {
-            document.querySelectorAll('.dropdown-menu').forEach(menu => {
-                menu.style.opacity = '0';
-                menu.style.visibility = 'hidden';
-            });
-        }
-    });
 });
