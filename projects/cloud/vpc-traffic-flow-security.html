@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPC Traffic Flow and Security | Benjamin Ampah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/project-detail.css">
+    <link rel="icon" type="image/png" href="../assets/favicon_io/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Benjamin Ampah</a>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#projects">Projects <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../index.html#cloud-projects">Cloud & DevOps</a></li>
+                        <li><a href="../index.html#cyber-projects">Cybersecurity</a></li>
+                        <li><a href="../index.html#web-projects">Web Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.linkedin.com/in/benjamin-ampah/" target="_blank">LinkedIn</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h1>VPC Traffic Flow and Security</h1>
+                <div class="project-meta">
+                    <span class="project-category">Cloud & DevOps</span>
+                    <span class="project-category">AWS Networking</span>
+                </div>
+            </div>
+            
+            <div class="project-content">
+                <div class="project-image-hero">
+                    <img src="https://placehold.co/1200x600/E0F7F2/000000?text=VPC+Traffic+Flow+Architecture" alt="VPC Traffic Flow Diagram">
+                </div>
+                
+                <div class="project-overview">
+                    <h2>Project Overview</h2>
+                    <p>Enhanced VPC traffic flow and security by configuring route tables for internet-bound traffic, implementing security groups to manage resource-level access, and deploying network ACLs for additional subnet-level protection. Built a secure and well-structured AWS networking environment.</p>
+                    
+                    <div class="project-details-grid">
+                        <div class="detail-card">
+                            <h4>Challenge</h4>
+                            <p>Implement granular control over network traffic flow while maintaining multiple layers of security within a VPC.</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Solution</h4>
+                            <p>Implemented a defense-in-depth strategy using route tables, security groups, and network ACLs working in conjunction.</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Impact</h4>
+                            <p>Created a secure network architecture with controlled traffic flow and multiple security checkpoints.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-technical">
+                    <h2>Technical Implementation</h2>
+                    <div class="technical-details">
+                        <div class="technical-description">
+                            <h3>Traffic Flow Configuration</h3>
+                            <ul>
+                                <li>Designed custom route tables for public and private subnets</li>
+                                <li>Configured 0.0.0.0/0 routes to Internet Gateway (public) and NAT Gateway (private)</li>
+                                <li>Implemented VPC Flow Logs to monitor traffic patterns</li>
+                            </ul>
+                            
+                            <h3>Security Implementation</h3>
+                            <ul>
+                                <li>Created security groups with least-privilege rules</li>
+                                <li>Configured network ACLs with stateful rules for subnet-level filtering</li>
+                                <li>Implemented security group referencing for simplified management</li>
+                            </ul>
+                        </div>
+                        <div class="technical-image">
+                            <img src="https://placehold.co/500x600/F7F7F7/000000?text=Security+Layer+Diagram" alt="Security Layers Diagram">
+                            <div class="image-caption">Defense-in-depth security architecture</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-results">
+                    <h2>Results & Key Takeaways</h2>
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <i class="fas fa-traffic-light"></i>
+                            <h4>Controlled Traffic Flow</h4>
+                            <p>Established predictable routing paths for different types of network traffic.</p>
+                        </div>
+                        <div class="result-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Layered Security</h4>
+                            <p>Implemented multiple security controls at different network layers.</p>
+                        </div>
+                        <div class="result-card">
+                            <i class="fas fa-search"></i>
+                            <h4>Improved Visibility</h4>
+                            <p>Gained network traffic insights through VPC Flow Logs monitoring.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="key-takeaways">
+                        <h3>Lessons Learned</h3>
+                        <ul>
+                            <li>Route tables control traffic direction while security groups and NACLs control access</li>
+                            <li>Security groups are stateful (allow return traffic automatically) while NACLs are stateless</li>
+                            <li>VPC Flow Logs provide valuable network traffic metadata for troubleshooting</li>
+                            <li>Security group references simplify rule management between trusted resources</li>
+                            <li>Proper tagging is essential for managing complex network configurations</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-skills">
+                    <h2>Skills Applied</h2>
+                    <div class="skills-tags">
+                        <span>AWS VPC</span>
+                        <span>Route Tables</span>
+                        <span>Security Groups</span>
+                        <span>Network ACLs</span>
+                        <span>Traffic Monitoring</span>
+                        <span>Cloud Security</span>
+                        <span>AWS Networking</span>
+                    </div>
+                </div>
+                
+                <div class="download-section">
+                    <h3>Project Documentation</h3>
+                    <p>Download the complete project documentation including architecture diagrams and implementation details.</p>
+                    <a href="../../assets/projects/cloud/VPC Traffic Flow and Security Project.pdf" 
+                       class="download-btn" 
+                       download>
+                       <i class="fas fa-file-pdf"></i> Download Full Documentation
+                    </a>
+                </div>
+                <div class="project-cta">
+                    <a href="../index.html#cloud-projects" class="btn btn-primary">View All Cloud Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Benjamin Ampah</h3>
+                    <p>Cloud DevOps & Cybersecurity Specialist dedicated to building secure, scalable digital solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://x.com/ampah_benjamin6" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="www.linkedin.com/in/benjamin-ampah" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/benjaminampah" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/ampahben" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Benjamin Ampah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

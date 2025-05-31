@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecting GitHub Repository with AWS | Benjamin Ampah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/project-detail.css">
+    <link rel="icon" type="image/png" href="../assets/favicon_io/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Benjamin Ampah</a>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#projects">Projects <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../index.html#cloud-projects">Cloud & DevOps</a></li>
+                        <li><a href="../index.html#cyber-projects">Cybersecurity</a></li>
+                        <li><a href="../index.html#web-projects">Web Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.linkedin.com/in/benjamin-ampah/" target="_blank">LinkedIn</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h1>Connecting a GitHub Repository with AWS</h1>
+                <div class="project-meta">
+                    <span class="project-category">DevOps</span>
+                    <span class="project-category">CI/CD</span>
+                </div>
+            </div>
+            
+            <div class="project-content">
+                <div class="project-image-hero">
+                    <img src="https://placehold.co/1200x600/E0F7F2/000000?text=GitHub+AWS+Integration" alt="GitHub AWS Integration">
+                </div>
+                
+                <div class="project-overview">
+                    <h2>Project Overview</h2>
+                    <p>Established a secure and efficient connection between a local development environment and a GitHub repository, specifically in the context of integrating with AWS. Set up a new GitHub repository, configured Git locally, performed initial commits, and enhanced the repository with documentation to enable seamless cloud integration.</p>
+                    
+                    <div class="project-details-grid">
+                        <div class="detail-card">
+                            <h4>Challenge</h4>
+                            <p>Create a secure, version-controlled development workflow that integrates with AWS services.</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Solution</h4>
+                            <p>Implemented GitHub repository with proper branch protection and AWS integration hooks.</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Impact</h4>
+                            <p>Established foundation for CI/CD pipelines and infrastructure-as-code practices.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-technical">
+                    <h2>Technical Implementation</h2>
+                    <div class="technical-details">
+                        <div class="technical-description">
+                            <h3>Repository Setup</h3>
+                            <ul>
+                                <li>Created new GitHub repository with appropriate license</li>
+                                <li>Configured branch protection rules</li>
+                                <li>Set up required status checks for main branch</li>
+                                <li>Added .gitignore for project-specific files</li>
+                            </ul>
+                            
+                            <h3>Local Configuration</h3>
+                            <ul>
+                                <li>Initialized local Git repository</li>
+                                <li>Configured Git identity (name and email)</li>
+                                <li>Created initial commit with project structure</li>
+                                <li>Set up remote origin to GitHub repository</li>
+                            </ul>
+                            
+                            <h3>AWS Integration</h3>
+                            <ul>
+                                <li>Configured AWS credentials securely</li>
+                                <li>Set up GitHub Actions for AWS deployment</li>
+                                <li>Implemented secrets management for AWS access</li>
+                                <li>Tested push-to-deploy functionality</li>
+                            </ul>
+                        </div>
+                        <div class="technical-image">
+                            <img src="https://placehold.co/500x600/F7F7F7/000000?text=GitHub+AWS+Workflow" alt="Integration Workflow">
+                            <div class="image-caption">GitHub to AWS integration workflow</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-results">
+                    <h2>Results & Key Takeaways</h2>
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <i class="fas fa-code-branch"></i>
+                            <h4>Version Control</h4>
+                            <p>Established proper Git workflow with branching strategy</p>
+                        </div>
+                        <div class="result-card">
+                            <i class="fas fa-lock"></i>
+                            <h4>Secure Access</h4>
+                            <p>Implemented secure credentials management</p>
+                        </div>
+                        <div class="result-card">
+                            <i class="fas fa-robot"></i>
+                            <h4>Automation Ready</h4>
+                            <p>Set up foundation for CI/CD pipelines</p>
+                        </div>
+                    </div>
+                    
+                    <div class="key-takeaways">
+                        <h3>Lessons Learned</h3>
+                        <ul>
+                            <li>Branch protection prevents accidental pushes to main</li>
+                            <li>GitHub Actions provide powerful automation capabilities</li>
+                            <li>AWS credentials should never be hardcoded</li>
+                            <li>Good README files are essential for project onboarding</li>
+                            <li>.gitignore prevents sensitive files from being committed</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-skills">
+                    <h2>Skills Applied</h2>
+                    <div class="skills-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>AWS Integration</span>
+                        <span>CI/CD</span>
+                        <span>Version Control</span>
+                        <span>GitHub Actions</span>
+                        <span>Secret Management</span>
+                    </div>
+                </div>
+                
+                <div class="download-section">
+                    <h3>Project Documentation</h3>
+                    <p>Download the complete project documentation including workflow diagrams and implementation details.</p>
+                    <a href="../../assets/projects/devops/GitHub AWS Project.pdf" 
+                       class="download-btn" 
+                       download>
+                       <i class="fas fa-file-pdf"></i> Download Full Documentation
+                    </a>
+                </div>
+                <div class="project-cta">
+                    <a href="../index.html#cloud-projects" class="btn btn-primary">View All DevOps Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Benjamin Ampah</h3>
+                    <p>Cloud DevOps & Cybersecurity Specialist dedicated to building secure, scalable digital solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://x.com/ampah_benjamin6" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="www.linkedin.com/in/benjamin-ampah" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/benjaminampah" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/ampahben" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Benjamin Ampah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

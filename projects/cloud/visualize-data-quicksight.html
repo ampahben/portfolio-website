@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize Data with QuickSight | Benjamin Ampah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/project-detail.css">
+    <link rel="icon" type="image/png" href="../assets/favicon_io/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Benjamin Ampah</a>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#projects">Projects <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../index.html#cloud-projects">Cloud & DevOps</a></li>
+                        <li><a href="../index.html#cyber-projects">Cybersecurity</a></li>
+                        <li><a href="../index.html#web-projects">Web Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.linkedin.com/in/benjamin-ampah/" target="_blank">LinkedIn</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h1>Visualize Data with QuickSight</h1>
+                <div class="project-meta">
+                    <span class="project-category">AI & Analytics</span>
+                    <span class="project-category">Data Visualization</span>
+                </div>
+            </div>
+            
+            <div class="project-content">
+                <div class="project-image-hero">
+                    <img src="https://placehold.co/1200x600/E0F7F2/000000?text=QuickSight+Dashboard" alt="QuickSight Dashboard">
+                </div>
+                
+                <div class="project-overview">
+                    <h2>Project Overview</h2>
+                    <p>Built a data visualization dashboard using Amazon QuickSight to analyze a Netflix dataset. Uploaded the dataset to an S3 bucket, connected it to QuickSight, and created interactive graphs and charts. Experimented with various visualization styles and published a shareable dashboard for insights.</p>
+                    
+                    <div class="project-details-grid">
+                        <div class="detail-card">
+                            <h4>Challenge</h4>
+                            <p>Transform raw streaming data into meaningful visualizations that reveal viewer trends and content performance.</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Solution</h4>
+                            <p>Implemented a complete data analysis pipeline from S3 storage to interactive QuickSight dashboards.</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Impact</h4>
+                            <p>Demonstrated how business intelligence tools can uncover actionable insights from entertainment data.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-technical">
+                    <h2>Technical Implementation</h2>
+                    <div class="technical-details">
+                        <div class="technical-description">
+                            <h3>Data Preparation</h3>
+                            <ul>
+                                <li>Uploaded Netflix dataset to S3 bucket</li>
+                                <li>Cleaned and transformed data using AWS Glue</li>
+                                <li>Created Athena tables for SQL querying</li>
+                                <li>Configured appropriate data types</li>
+                            </ul>
+                            
+                            <h3>QuickSight Setup</h3>
+                            <ul>
+                                <li>Created SPICE dataset for improved performance</li>
+                                <li>Configured row-level security for data protection</li>
+                                <li>Set up automatic refresh schedules</li>
+                                <li>Created calculated fields for derived metrics</li>
+                            </ul>
+                            
+                            <h3>Visualization Design</h3>
+                            <ul>
+                                <li>Created multiple analysis with different chart types</li>
+                                <li>Implemented filters for interactive exploration</li>
+                                <li>Designed parameters for dynamic measures</li>
+                                <li>Published dashboards with controlled access</li>
+                            </ul>
+                        </div>
+                        <div class="technical-image">
+                            <img src="https://placehold.co/500x600/F7F7F7/000000?text=Data+Visualization+Process" alt="Visualization Process">
+                            <div class="image-caption">QuickSight data analysis workflow</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-results">
+                    <h2>Results & Key Takeaways</h2>
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <i class="fas fa-chart-bar"></i>
+                            <h4>Interactive Visuals</h4>
+                            <p>Created dynamic charts revealing content trends</p>
+                        </div>
+                        <div class="result-card">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Actionable Insights</h4>
+                            <p>Identified popular genres and seasonal patterns</p>
+                        </div>
+                        <div class="result-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Shareable Reports</h4>
+                            <p>Published dashboards for team collaboration</p>
+                        </div>
+                    </div>
+                    
+                    <div class="key-takeaways">
+                        <h3>Lessons Learned</h3>
+                        <ul>
+                            <li>QuickSight provides powerful cloud-native BI capabilities</li>
+                            <li>SPICE datasets enable fast performance with large data</li>
+                            <li>Proper data preparation is essential before visualization</li>
+                            <li>Interactive filters enhance user exploration</li>
+                            <li>Row-level security maintains data governance</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-skills">
+                    <h2>Skills Applied</h2>
+                    <div class="skills-tags">
+                        <span>Amazon QuickSight</span>
+                        <span>Amazon S3</span>
+                        <span>Data Visualization</span>
+                        <span>Business Intelligence</span>
+                        <span>Dashboard Design</span>
+                        <span>Data Analysis</span>
+                        <span>AWS Glue</span>
+                    </div>
+                </div>
+                
+                <div class="download-section">
+                    <h3>Project Documentation</h3>
+                    <p>Download the complete project documentation including sample dashboards and implementation details.</p>
+                    <a href="../../assets/projects/ai/QuickSight Visualization Project.pdf" 
+                       class="download-btn" 
+                       download>
+                       <i class="fas fa-file-pdf"></i> Download Full Documentation
+                    </a>
+                </div>
+                <div class="project-cta">
+                    <a href="../index.html#cloud-projects" class="btn btn-primary">View All AI Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Benjamin Ampah</h3>
+                    <p>Cloud DevOps & Cybersecurity Specialist dedicated to building secure, scalable digital solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://x.com/ampah_benjamin6" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="www.linkedin.com/in/benjamin-ampah" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/benjaminampah" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/ampahben" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Benjamin Ampah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

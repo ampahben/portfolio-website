@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Virtual Private Cloud | Benjamin Ampah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <head>
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/project-detail.css">
+</head>
+    <link rel="icon" type="image/png" href="../assets/favicon_io/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Benjamin Ampah</a>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#projects">Projects <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../index.html#cloud-projects">Cloud & DevOps</a></li>
+                        <li><a href="../index.html#cyber-projects">Cybersecurity</a></li>
+                        <li><a href="../index.html#web-projects">Web Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.linkedin.com/in/benjamin-ampah/" target="_blank">LinkedIn</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h1>Build a Virtual Private Cloud in AWS</h1>
+                <div class="project-meta">
+                    <span class="project-category">Cloud & DevOps</span>
+                    <span class="project-category">AWS Networking</span>
+                </div>
+            </div>
+            
+            <div class="project-content">
+                <div class="project-image-hero">
+                    <img src="https://placehold.co/1200x600/E0F7F2/000000?text=AWS+VPC+Architecture" alt="VPC Architecture Diagram">
+                </div>
+                
+                <div class="project-overview">
+                    <h2>Project Overview</h2>
+                    <p>Designed and configured a Virtual Private Cloud (VPC) in AWS, setting up subnets to define access control, linking an internet gateway for external connectivity, and managing IP addresses with CIDR blocks. Ensured efficient networking infrastructure for cloud-based applications.</p>
+                    
+                    <div class="project-details-grid">
+                        <div class="detail-card">
+                            <h4>Challenge</h4>
+                            <p>Create an isolated network environment in AWS that provides secure communication between cloud resources while allowing controlled access to the internet.</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Solution</h4>
+                            <p>Implemented a custom VPC with public and private subnets across multiple availability zones, configured route tables, and established internet connectivity through an Internet Gateway.</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Impact</h4>
+                            <p>Created a secure, scalable network foundation for deploying cloud applications with proper network segmentation and access controls.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-technical">
+                    <h2>Technical Implementation</h2>
+                    <div class="technical-details">
+                        <div class="technical-description">
+                            <h3>VPC Configuration</h3>
+                            <p>Created a custom VPC with the following specifications:</p>
+                            <ul>
+                                <li>IPv4 CIDR block: 10.0.0.0/16</li>
+                                <li>DNS hostnames enabled</li>
+                                <li>DNS resolution enabled</li>
+                                <li>Default security group with restrictive rules</li>
+                            </ul>
+                            
+                            <h3>Subnet Architecture</h3>
+                            <p>Designed a multi-tier subnet structure:</p>
+                            <ul>
+                                <li>Public subnets (10.0.1.0/24, 10.0.2.0/24) with routes to Internet Gateway</li>
+                                <li>Private subnets (10.0.3.0/24, 10.0.4.0/24) with routes to NAT Gateway</li>
+                                <li>Distributed across two Availability Zones for high availability</li>
+                            </ul>
+                            
+                            <h3>Connectivity Setup</h3>
+                            <p>Implemented network connectivity components:</p>
+                            <ul>
+                                <li>Internet Gateway attached to VPC for public internet access</li>
+                                <li>Custom route tables for public and private subnets</li>
+                                <li>NAT Gateway in public subnet for private subnet outbound access</li>
+                                <li>VPC endpoints for private AWS service access</li>
+                            </ul>
+                        </div>
+                        <div class="technical-image">
+                            <img src="https://placehold.co/500x600/F7F7F7/000000?text=VPC+Network+Diagram" alt="Technical Diagram">
+                            <div class="image-caption">VPC Architecture showing subnets and connectivity components</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-results">
+                    <h2>Results & Key Takeaways</h2>
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <i class="fas fa-network-wired"></i>
+                            <h4>Network Foundation</h4>
+                            <p>Established a robust network infrastructure ready for multi-tier application deployment.</p>
+                        </div>
+                        <div class="result-card">
+                            <i class="fas fa-lock"></i>
+                            <h4>Security Baseline</h4>
+                            <p>Implemented security best practices through network segmentation and access controls.</p>
+                        </div>
+                        <div class="result-card">
+                            <i class="fas fa-expand"></i>
+                            <h4>Scalability</h4>
+                            <p>Designed with room for growth through proper CIDR planning and AZ distribution.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="key-takeaways">
+                        <h3>Lessons Learned</h3>
+                        <ul>
+                            <li>Proper CIDR planning is essential for future growth</li>
+                            <li>Route tables determine subnet accessibility</li>
+                            <li>NAT Gateway provides outbound internet for private resources</li>
+                            <li>Multi-AZ deployment enhances availability</li>
+                            <li>Tagging resources systematically improves management</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-skills">
+                    <h2>Skills Applied</h2>
+                    <div class="skills-tags">
+                        <span>AWS VPC</span>
+                        <span>Subnet Design</span>
+                        <span>Internet Gateway</span>
+                        <span>CIDR Blocks</span>
+                        <span>Route Tables</span>
+                        <span>Cloud Networking</span>
+                        <span>AWS Security</span>
+                    </div>
+                </div>
+                
+                <div class="download-section">
+                    <h3>Project Documentation</h3>
+                    <p>Download the complete project documentation including architecture diagrams and implementation details.</p>
+                    <a href="../../assets/projects/cloud/Build a Virtual Private Cloud Project.pdf" 
+                    class="download-btn" 
+                    download>
+                    <i class="fas fa-file-pdf"></i> Download Full Documentation
+                    </a>
+                </div>
+                <div class="project-cta">
+                    <a href="../index.html#cloud-projects" class="btn btn-primary">View All Cloud Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Benjamin Ampah</h3>
+                    <p>Cloud DevOps & Cybersecurity Specialist dedicated to building secure, scalable digital solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://x.com/ampah_benjamin6" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="www.linkedin.com/in/benjamin-ampah" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/benjaminampah" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/ampahben" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Benjamin Ampah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

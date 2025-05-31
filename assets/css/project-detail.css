@@ -1,0 +1,388 @@
+/* project-detail.css */
+/* Project Detail Page Specific Styles */
+
+.project-detail {
+    padding: 5rem 0;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.project-detail .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Project Header */
+.project-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.project-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.project-category, .project-date {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.project-category {
+    background-color: #E0F7F2;
+    color: #00695C;
+}
+
+.project-date {
+    background-color: #f5f5f5;
+    color: #555;
+}
+
+/* Project Content Sections */
+.project-content {
+    margin-top: 3rem;
+}
+
+.project-image-hero {
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-image-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-overview h2,
+.project-technical h2,
+.project-results h2,
+.project-skills h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin: 3rem 0 1.5rem;
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.project-overview h2::after,
+.project-technical h2::after,
+.project-results h2::after,
+.project-skills h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+.project-overview p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/* Project Details Grid */
+.project-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2.5rem 0;
+}
+
+.detail-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    transition: transform 0.3s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.detail-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.detail-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Technical Implementation */
+.technical-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 2.5rem 0;
+}
+
+.technical-description h3 {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 1rem;
+    color: #34495e;
+}
+
+.technical-description ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.technical-description li {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.technical-image {
+    position: relative;
+    align-self: start;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.technical-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #777;
+    font-style: italic;
+}
+
+/* Results Section */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2.5rem 0;
+}
+
+.result-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.result-card:hover {
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.result-card i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+}
+
+.result-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.result-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.key-takeaways {
+    background-color: #f0f7fd;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+    border-left: 4px solid #3498db;
+}
+
+.key-takeaways h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.key-takeaways ul {
+    margin-left: 1.5rem;
+}
+
+.key-takeaways li {
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+/* Skills Section */
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.skills-tags span {
+    background-color: #E0F7F2;
+    color: #00695C;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Download Section */
+.download-section {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 3rem 0;
+    border-left: 4px solid #3498db;
+}
+
+.download-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e74c3c;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.download-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* CTA Section */
+.project-cta {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.project-cta .btn {
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .technical-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .technical-image {
+        order: -1;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-detail {
+        padding: 3rem 0;
+    }
+    
+    .project-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .project-meta {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .technical-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-detail .container {
+        padding: 0 1.2rem;
+    }
+    
+    .project-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .project-details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #2a9d8f; /* Your teal color */
+    color: white;
+    border: 2px solid #2a9d8f;
+}
+
+.btn-primary:hover {
+    background-color: #21867a;
+    border-color: #21867a;
+}
+
+.project-cta {
+    margin-top: 40px;
+    text-align: center;
+}
