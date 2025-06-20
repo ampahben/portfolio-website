@@ -1,0 +1,17 @@
+{
+  "web_development": [
+    {"name": "Python/Django", "level": 90},
+    {"name": "WordPress", "level": 88},
+    {"name": "PostgreSQL", "level": 85}
+  ],
+  "devops_cloud": [
+    {"name": "Azure DevOps", "level": 85},
+    {"name": "IT Operations", "level": 88},
+    {"name": "System Administration", "level": 82}
+  ],
+  "management": [
+    {"name": "Program Coordination", "level": 92},
+    {"name": "Team Leadership", "level": 88},
+    {"name": "Start-up Leadership", "level": 85}
+  ]
+}

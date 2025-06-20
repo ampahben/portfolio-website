@@ -1,0 +1,40 @@
+{
+  "cloud": [
+    {
+      "id": 1,
+      "title": "Build a Virtual Private Cloud",
+      "image": "vpc-setup.jpg",
+      "description": "Designed and configured a VPC in AWS, setting up subnets, internet gateway, and managing IP addresses with CIDR blocks for efficient cloud networking.",
+      "tech_stack": ["AWS VPC", "Subnet Configuration", "Internet Gateway", "CIDR Blocks"],
+      "link": "projects/cloud/build-virtual-private-cloud.html"
+    },
+    {
+      "id": 2,
+      "title": "Creating a Private Subnet",
+      "image": "private-subnet.jpg",
+      "description": "Enhanced AWS networking by setting up a private subnet within a VPC, ensuring isolation and security with private route tables and custom network ACLs.",
+      "tech_stack": ["AWS VPC", "Route Tables", "Network ACLs", "Cloud Security"],
+      "link": "projects/cloud/private-subnet.html"
+    }
+  ],
+  "cybersecurity": [
+    {
+      "id": 1,
+      "title": "ANZ Cyber Security Management",
+      "image": "anz-cybersecurity.jpg",
+      "description": "Investigated emails for malicious content (phishing) and analyzed suspicious network activity via packet capture.",
+      "tech_stack": ["Wireshark", "HxD", "Social Engineering"],
+      "link": "projects/cybersecurity/anz-cybersecurity-management.html"
+    }
+  ],
+  "web": [
+    {
+      "id": 1,
+      "title": "E-commerce Platform",
+      "image": "ecommerce-platform.jpg",
+      "description": "A full-featured online store with payment integration and inventory management.",
+      "tech_stack": ["React", "Node.js", "MongoDB"],
+      "link": "projects/web/ecommerce-platform.html"
+    }
+  ]
+}

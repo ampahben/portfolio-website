@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "company": "Wave Technologies and Consultancy",
+    "logo": "wave-technologies.png",
+    "position": "Program Coordinator",
+    "duration": "Sep 2023 - Present",
+    "location": "Full-time",
+    "description": "Leading program coordination initiatives and team management while focusing on community outreach and STEM education programs.",
+    "tech_stack": ["Program Coordination", "Team Coordination", "Communication", "Community Outreach", "STEM Education"],
+    "achievements": [
+      "Coordinate and manage multiple programs simultaneously",
+      "Lead team coordination and communication initiatives",
+      "Drive community outreach and STEM education programs"
+    ]
+  },
+  {
+    "id": 2,
+    "company": "Wave Technologies and Consultancy",
+    "logo": "wave-technologies.png",
+    "position": "Co-Founder",
+    "duration": "Jan 2023 - Present",
+    "location": "Full-time",
+    "description": "Co-founded and led the strategic direction of Wave Technologies and Consultancy, focusing on technology solutions and consultancy services.",
+    "tech_stack": ["Start-up Leadership", "Start-up Ventures", "Strategic Planning", "Business Development"],
+    "achievements": [
+      "Successfully launched and established the company",
+      "Developed strategic business partnerships",
+      "Led team growth and organizational development"
+    ]
+  },
+  {
+    "id": 3,
+    "company": "FloodGates International Corp.",
+    "logo": "floodgates.png",
+    "position": "Engineering Associate",
+    "duration": "May 2024 - Mar 2025",
+    "location": "Hybrid",
+    "description": "Led web development projects and implemented scalable architectures using Django and Azure DevOps, with focus on fintech and AI applications.",
+    "tech_stack": ["Python", "Django", "Azure DevOps", "PayStack Integration", "Web Development"],
+    "achievements": [
+      "Led development of Canada Innovation and Fintech Forum website",
+      "Integrated PayStack into Trustur AI web application using Django",
+      "Designed scalable web application architecture in Azure",
+      "Implemented coding standards and DevOps best practices"
+    ]
+  }
+]
